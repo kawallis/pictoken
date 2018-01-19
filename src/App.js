@@ -6,9 +6,11 @@ import Badges from './Badges';
 import Team from './Team';
 import SecondAbout from './SecondAbout';
 
-import { Menu, Icon, Carousel, Anchor } from 'antd';
+import { Menu, Icon, Carousel, Anchor, Layout } from 'antd';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
+const { Header, Content, Footer } = Layout;
+
 
 
 export default class App extends React.Component {
@@ -87,7 +89,9 @@ export default class App extends React.Component {
         <SecondAbout />
         <Badges />
         <Team />
-
+        <Footer style={{ textAlign: 'center' }}>
+          Picto Design ©2018 Created by PictoTeam
+        </Footer>   
       </div>
     );
   }
