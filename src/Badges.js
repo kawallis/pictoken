@@ -1,11 +1,13 @@
 import React from 'react'
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import { Row, Col, Button, Icon } from 'antd';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 export default class Badges extends React.Component {
 
     render() {
         return (
+            <ScrollableAnchor id={'section3'}>
             <div style={{marginTop: '40vh', marginBottom: '40vh'}}>
                 <Row gutter={16}>
                     <Col span={8} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
@@ -26,6 +28,7 @@ export default class Badges extends React.Component {
                     </Col>
                 </Row>
             </div>
+            </ScrollableAnchor>
         );
     }
 }

@@ -1,12 +1,16 @@
 import React from 'react'
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import { Row, Col, Button, Icon, Card } from 'antd';
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 const { Meta } = Card;
 
 export default class Team extends React.Component {
 
     render() {
         return (
+            <ScrollableAnchor id={'section4'}>
+
             <div style={{marginTop: '10vh'}}>
                 <h2 style={{ color: 'black', fontSize: '2em', marginLeft: '3vw' }}> TEAM & ADVISORS </h2>
                 <h3 style={{ marginLeft: '3vw'}}>Meet the Team Creating the First Decentralized Home Sharing platform</h3>
@@ -63,6 +67,7 @@ export default class Team extends React.Component {
                     </Card>
                 </div>
             </div>
+            </ScrollableAnchor>
         );
     }
 }

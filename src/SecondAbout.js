@@ -1,11 +1,13 @@
 import React from 'react'
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import { Row, Col, Button, Icon } from 'antd';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 export default class SecondAbout extends React.Component {
 
     render() {
         return (
+            <ScrollableAnchor id={'section2'}>
             <div>
                 <Row style={{marginTop: '15vh', marginBottom: '15vh'}}>
                     <Col span={12} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -25,6 +27,7 @@ export default class SecondAbout extends React.Component {
                     </Col>
                 </Row>
             </div>
+            </ScrollableAnchor>
         );
     }
 }
