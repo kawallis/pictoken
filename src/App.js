@@ -4,6 +4,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import About from './About';
 import Badges from './Badges';
 import Team from './Team';
+import SecondAbout from './SecondAbout';
 
 import { Menu, Icon, Carousel } from 'antd';
 const SubMenu = Menu.SubMenu;
@@ -64,8 +65,10 @@ export default class App extends React.Component {
           })}
         </Carousel>
         <About />
+        <SecondAbout />
         <Badges />
         <Team />
+
       </div>
     );
   }
