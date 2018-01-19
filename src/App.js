@@ -3,6 +3,7 @@ import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import About from './About';
 import Badges from './Badges';
+import Team from './Team';
 
 import { Menu, Icon, Carousel } from 'antd';
 const SubMenu = Menu.SubMenu;
@@ -27,7 +28,7 @@ export default class App extends React.Component {
           selectedKeys={[this.state.current]}
           mode="horizontal"
         >
-          <Menu.Item key="about">
+          <Menu.Item key="home">
             <Icon type="home" />Picto
           </Menu.Item>
           <Menu.Item key="about">
@@ -64,6 +65,7 @@ export default class App extends React.Component {
         </Carousel>
         <About />
         <Badges />
+        <Team />
       </div>
     );
   }
