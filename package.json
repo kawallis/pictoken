@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "next build",
+    "postbuild": "next export -o build",
     "start": "next start",
     "start:watch": "next"
   }
