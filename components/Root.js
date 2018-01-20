@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import antd from 'antd/dist/antd.css';
+import antd from 'antd/dist/antd.min.css';
 
 export default class Root extends Component {
   render() {
