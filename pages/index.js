@@ -3,6 +3,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import { Menu, Icon, Carousel, Anchor, Layout } from 'antd';
 import { v1 } from 'uuid';
 import Root from '../components/Root';
+import Head from '../components/Head';
 import About from '../components/About';
 import Badges from '../components/Badges';
 import Team from '../components/Team';
@@ -42,7 +43,7 @@ export default class IndexPage extends Component {
   render() {
     return (
       <Root>
-        <link href="https://fonts.googleapis.com/css?family=Cabin|Open+Sans|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet" />
+        <Head />
         <Headroom style={{
           
         }}>
