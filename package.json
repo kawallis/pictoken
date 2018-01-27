@@ -6,13 +6,19 @@
     "next": "^4.2.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-headroom": "^2.2.2",
+    "react-parallax": "^1.6.0",
     "react-scrollable-anchor": "^0.5.0"
+  },
+  "theme": {
+    "primary-color": "#FECA64"
   },
   "devDependencies": {
     "babel-plugin-inline-import": "^2.0.6",
     "firebase-tools": "^3.17.3"
   },
   "scripts": {
+    "dev": "next",
     "build": "next build",
     "postbuild": "next export -o build",
     "deploy": "firebase deploy",

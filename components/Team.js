@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Row, Col, Button, Icon, Card } from 'antd';
+import colors from '../static/theme'
 
 const { Meta } = Card;
 
@@ -8,9 +9,9 @@ export default class Team extends Component {
   render() {
     return (
       <ScrollableAnchor id="section4">
-        <div style={{ marginTop: '10vh' }}>
-          <h2 style={{ color: 'black', fontSize: '2em', marginLeft: '3vw' }}>TEAM &amp; ADVISORS</h2>
-          <h3 style={{ marginLeft: '3vw' }}>Meet the Team Creating the First Decentralized Home Sharing platform</h3>
+        <div style={{ marginTop: '10vh', backgroundColor: colors.white }}>
+          <h2 style={{ color: colors.pink, fontSize: '2em', marginLeft: '3vw' }}>TEAM &amp; ADVISORS</h2>
+          <h3 style={{ color: colors.yellow, marginLeft: '3vw' }}>Meet the Team Creating the First Decentralized Home Sharing platform</h3>
           <div style={{ display: 'flex', flexFlow: 'row wrap', justifyContent:'space-around' }}>
             <Card
               hoverable
