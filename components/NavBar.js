@@ -31,7 +31,7 @@ export default class NavBar extends React.Component {
                         return (
                 <Menu
                     mode="vertical"
-                    style={{ position: 'fixed', zIndex: 10, width: '100vw', backgroundColor: colors.white, border: 'none', height: '100vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexDirection: 'column',transform: `translate3d(${x}vw, 0, 0)` }}
+                    style={{ position: 'fixed',top: '10vh', zIndex: 10, width: '100vw', backgroundColor: colors.white, border: 'none', height: '100vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexDirection: 'column',transform: `translate3d(${x}vw, 0, 0)` }}
                 >
                     <Menu.Item key="home" >
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }} onClick={this.rotateAndShowMenu}>
@@ -128,7 +128,7 @@ export default class NavBar extends React.Component {
                 </MediaQuery>
                 <MediaQuery query="(max-width: 1224px)">
                     <Headroom>
-                        <div style={{ backgroundColor: colors.white, }}>
+                        <div style={{ backgroundColor: colors.white,height: '10vh' }}>
                             <Icon type="bars" style={{transform: `rotate(${rotation})`,    transitionDuration: '0.5s', margin: '2vh', fontSize: '5vh', color: colors.yellow,cursor: 'pointer' }}
                                 onClick={this.rotateAndShowMenu}
                             />
