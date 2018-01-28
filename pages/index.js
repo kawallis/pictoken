@@ -18,6 +18,16 @@ const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 const { Header, Content, Footer } = Layout;
 
+import { bounce } from 'react-animations';
+import Radium, {StyleRoot} from 'radium';
+
+const styles = {
+  bounce: {
+    animation: 'x 1s',
+    animationName: Radium.keyframes(bounce, 'bounce')
+  }
+}
+
 export default class IndexPage extends Component {
   static defaultProps = {
     images: [
@@ -48,7 +58,7 @@ export default class IndexPage extends Component {
         <Parallax style={{ boxShadow: '0 1px 4px rgba(0, 0, 0, 0.3), 0 0 80px rgba(0, 0, 0, 0.1) inset', backgroundColor: colors.pink ,borderTopLeftRadius: '50px', borderTopRightRadius: '50px'}}>
           <ScrollableAnchor id="section0">
             <div style={{ zIndex: 2, height: '100vh', width: '100vw', display: 'flex',justifyContent: 'center', alignItems:'center', flexDirection: 'column' }}>
-              <h1 style={{ color: colors.yellow, fontSize: '4em',fontFamily: 'Cabin' }}>PictoToken</h1>
+              <h1 style={{...styles.bounce,color: colors.yellow, fontSize: '4em',fontFamily: 'Cabin' }}>PictoToken</h1>
               <h3 style={{ color: colors.white, width: '50vw', textAlign: 'center', fontFamily: 'Open Sans' }}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</h3>
               <Icon style={{ color: colors.yellow, fontSize: '4em',position: 'absolute', bottom: 40}} type="down-circle-o" />
             </div>
