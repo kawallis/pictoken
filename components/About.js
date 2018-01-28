@@ -7,17 +7,16 @@ export default class About extends Component {
   render() {
     return (
       <ScrollableAnchor id="section1">
-        <div>
-          <Row style={{display:'flex', alignItems: 'center',  marginTop: '15vh', marginBottom: '15vh' }}>
-            <Col span={12} style={{ display: 'flex', justifyContent: 'center' }}>
-              <img
-                src="/static/images/girlSmile.jpg"
-                style={{
-                  height: '80vh',
-                }}
-              />
-            </Col>
-            <Col span={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{display:'flex', flexDirection: 'row',flexWrap: 'wrap',justifyContent: 'center', marginTop: '15vh', marginBottom: '15vh', padding: '2vh' }}>
+              <div style={{padding: '2vh', display: 'flex', justifyContent: 'center' }}>
+                <img
+                  src="/static/images/girlSmile.jpg"
+                  style={{
+                    height: '80vh',
+                  }}
+                />
+              </div>
+    
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <h1 style={{ color: colors.yellow }}>About PictoToken</h1>
                 <h2 style={{ color: colors.black , fontSize: '3em' }}>We Are Reinventing How Photographers Share Their Memories</h2>
@@ -29,8 +28,6 @@ export default class About extends Component {
                   See How <Icon type="right" />
                 </Button>
               </div>
-            </Col>
-          </Row>
         </div>
       </ScrollableAnchor>
     );
