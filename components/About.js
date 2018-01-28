@@ -47,13 +47,14 @@ export default class About extends Component {
                 />
               </div>
 
-              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '98vw' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '80vw' }}>
                 <h1 style={{ color: colors.yellow }}>About PictoToken</h1>
-                <h2 style={{ color: colors.black, fontSize: '3em' }}>We Are Reinventing How Photographers Share Their Memories</h2>
-                <p style={{ color: colors.grey }}>A decenteralized platform for images thats super cool and promises to do amazing things for everyone, and everywhere A decenteralized platform for images thats super cool and promises to do amazing things for everyone, and everywhere A decenteralized platform for images thats super cool and promises to do amazing things for everyone, and everywhere</p>
+                <h2 style={{ color: colors.black, fontSize: '2em' }}>We Are Reinventing How Photographers Share Their Memories</h2>
+                <p style={{ color: colors.grey, fontSize:' 1.2em',lineHeight: 2.1 }}>A decenteralized platform for images thats super cool and promises to do amazing things for everyone, and everywhere A decenteralized platform for images thats super cool and promises to do amazing things for everyone, and everywhere A decenteralized platform for images thats super cool and promises to do amazing things for everyone, and everywhere</p>
                 <Button
                   type="primary"
-                  style={{ width: '15vw', backgroundColor: colors.yellow, borderColor: colors.yellow }}
+                  style={{ width: '40vw', height: '6vh',
+                  backgroundColor: colors.yellow, borderColor: colors.yellow }}
                 >
                   See How <Icon type="right" />
                 </Button>

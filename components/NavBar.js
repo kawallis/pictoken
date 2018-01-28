@@ -87,7 +87,7 @@ export default class NavBar extends React.Component {
                     <Headroom>
                         <Menu
                             mode="horizontal"
-                            style={{ zIndex: 10, width: '100vw', backgroundColor: colors.white, border: 'none' }}
+                            style={{ zIndex: 10, width: '100vw', backgroundColor: colors.white, border: 'none', height: '10vh', display: 'flex', alignItems: 'center' }}
                         >
                             <Menu.Item key="home">
                                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
